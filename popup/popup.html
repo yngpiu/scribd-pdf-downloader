@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scribd PDF Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo-container">
+        <img class="logo" src="../icons/icon48.png" alt="Logo">
+      </div>
+      <div class="title-container">
+        <h1>Scribd Downloader</h1>
+        <p class="subtitle">Download documents as clean PDFs</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Status Display -->
+      <div class="status-box">
+        <div class="status-indicator">
+          <span class="pulse-dot idle" id="pulse-dot"></span>
+          <span class="status-text" id="status-text">Ready to download</span>
+        </div>
+        <p class="status-detail" id="status-detail">Open a Scribd document page to start.</p>
+      </div>
+
+      <!-- Progress Container (Hidden initially) -->
+      <div class="progress-container hidden" id="progress-container">
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progress-bar-fill"></div>
+        </div>
+        <div class="progress-labels">
+          <span id="progress-percent">0%</span>
+          <span id="progress-count">0 / 0 pages</span>
+        </div>
+      </div>
+
+      <!-- Settings Section -->
+      <div class="settings-box">
+        <div class="setting-row">
+          <label for="delay-range">Scroll Delay:</label>
+          <span class="delay-value" id="delay-value">150ms</span>
+        </div>
+        <input type="range" id="delay-range" min="50" max="500" step="50" value="150">
+        <p class="setting-desc">Lower is faster; higher is safer for slow connections.</p>
+      </div>
+
+      <!-- Action Button -->
+      <button class="action-btn" id="start-btn">
+        <span class="btn-text">Start Downloader</span>
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="footer">
+      <p>Supports embeds & regular document links</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

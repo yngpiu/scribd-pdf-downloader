@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Scribd PDF Downloader",
+  "version": "1.0",
+  "description": "Download Scribd documents as clean, high-quality PDFs for free by automating lazy loading and formatting.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.scribd.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.scribd.com/document/*",
+        "https://www.scribd.com/doc/*",
+        "https://www.scribd.com/embeds/*/content*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
