@@ -1,3 +1,5 @@
+🇺🇸 English | [🇻🇳 Tiếng Việt](./README_VI.md)
+
 # Scribd PDF Downloader - Chrome Extension
 
 A clean, modern, and highly-optimized Manifest V3 Chrome Extension to download Scribd documents as high-quality PDFs for free. 

@@ -1,3 +1,5 @@
+[🇺🇸 English](./README.md) | 🇻🇳 Tiếng Việt
+
 # Scribd PDF Downloader - Chrome Extension (Tiếng Việt)
 
 Một tiện ích mở rộng Chrome (Manifest V3) hiện đại, sạch sẽ và tối ưu hóa để tải tài liệu Scribd dưới dạng PDF chất lượng cao hoàn toàn miễn phí.
