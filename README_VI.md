@@ -1,79 +1,65 @@
-[🇺🇸 English](./README.md) | 🇻🇳 Tiếng Việt
-
 <p align="center">
-  <img src="assets/logo.png" alt="Scribd PDF Downloader Logo" width="128">
+  <img src="assets/logo.png" alt="Logo Scribd PDF Downloader" width="128">
 </p>
 
 <h1 align="center">Scribd PDF Downloader</h1>
 
 <p align="center">
-  <b>Một tiện ích mở rộng Chrome (Manifest V3) hiện đại, sạch sẽ và tối ưu hóa để tải tài liệu Scribd dưới dạng PDF chất lượng cao hoàn toàn miễn phí.</b>
+  <b>Một tiện ích mở rộng Chrome Manifest V3 hiện đại, gọn nhẹ và được tối ưu hóa cao, cho phép tải tài liệu Scribd dưới dạng PDF chất lượng cao hoàn toàn miễn phí.</b>
 </p>
 
 <p align="center">
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/Gi%E1%BA%A5y%20ph%C3%A9p-MIT-green.svg" alt="License">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
   </a>
-  <img src="https://img.shields.io/badge/Phi%C3%AAn%20b%E1%BA%A3n-1.0.0-blue.svg" alt="Version">
-  <img src="https://img.shields.io/badge/Tr%C3%ACnh%20duy%E1%BB%87t-Chrome%20MV3-orange.svg" alt="Chrome MV3">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Chrome-Manifest%20v3-orange.svg" alt="Chrome MV3">
 </p>
-
-Extension tự động chuyển hướng các trang tài liệu thường sang liên kết nhúng sạch, tự động cuộn trang để tải tất cả hình ảnh, tài nguyên SVG, công thức toán học MathJax/LaTeX, áp dụng căn lề chính xác bằng CSS, và kích hoạt trình in PDF mặc định của Chrome.
-
----
-
-## Giao diện / Preview
 
 <p align="center">
-  <img src="assets/preview.png" alt="Extension Preview" width="320">
+  <a href="./README.md">English</a> | <strong>Tiếng Việt</strong>
 </p>
 
----
+<p align="center">
+  <img src="assets/preview.png" alt="Xem trước tiện ích" width="320">
+</p>
 
-## Tính năng nổi bật
+## Tính năng
 
-- **Tải xuống 1-Click:** Chỉ cần nhấp vào biểu tượng Extension trên bất kỳ trang tài liệu Scribd nào để bắt đầu.
-- **Tự động chuyển hướng:** Tự động phát hiện và chuyển các trang tài liệu dạng thường (`/document/...` và `/doc/...`) sang giao diện nhúng sạch (`/embeds/.../content`).
-- **Bộ đếm trang chính xác:** Nhận diện và đếm chính xác số lượng trang bằng cách phát hiện các thẻ wrapper thực tế (`.outer_page` hoặc `.newpage`), khắc phục triệt để lỗi đếm trùng lặp.
-- **Khổ trang in động (Dynamic CSS Sizing):** Tự động đo kích thước trang tài liệu theo inch và tiêm cấu hình `@page` tương ứng, giúp file PDF xuất ra khớp hoàn hảo với bố cục tài liệu gốc.
-- **Loại bỏ trang trắng thừa:** Reset toàn bộ lề/khoảng đệm của container về 0 và ẩn các thẻ tải ngầm, đảm bảo không tạo ra trang trắng trống ở cuối PDF.
-- **Giao diện Glassmorphism hiện đại:** Màn hình chờ Dark Mode mờ ảo hiển thị trạng thái, phần trăm tiến trình, và số trang đang xử lý.
-- **Vượt rào chặn chuyển hướng:** Hiển thị nút "Quay lại trang tài liệu" thủ công sau khi in xong để vượt qua cơ chế bảo mật chống tự động chuyển hướng khi chưa có tương tác của Chrome.
-- **Không cần đăng nhập:** Sử dụng ngay lập tức mà không cần tài khoản Scribd.
+- **Tải chỉ với 1 lần nhấp:** Chỉ cần nhấn vào biểu tượng tiện ích trên bất kỳ tài liệu Scribd nào để bắt đầu.
+- **Tự động chuyển hướng:** Tự động chuyển các liên kết `/document/...` và `/doc/...` sang giao diện `/embeds/.../content` để tải xuống dễ dàng hơn.
+- **Đếm số trang chính xác:** Theo dõi và hiển thị chính xác tổng số trang bằng cách phát hiện động các lớp (`.outer_page` hoặc `.newpage`).
+- **Tự động tính kích thước PDF:** Tự động đo kích thước từng trang tài liệu (theo inch) và chèn quy tắc `@page`, giúp file PDF xuất ra giữ nguyên bố cục gốc.
+- **Loại bỏ trang trắng thừa:** Đặt lại margin/padding về 0 và ẩn các phần tử tải cuối trang để tránh xuất hiện trang trắng ở cuối PDF.
+- **Giao diện tiến trình Glassmorphism:** Hiển thị lớp phủ tối hiện đại với trạng thái tải, phần trăm hoàn thành và số lượng trang.
+- **Không bị chặn chuyển hướng:** Sau khi hoàn thành, hiển thị nút **"Quay lại trang tài liệu"**, giúp vượt qua giới hạn chuyển hướng không có thao tác của Chrome.
+- **Không cần đăng nhập:** Hoạt động ngay lập tức mà không cần tài khoản Scribd.
 
----
+## Cài đặt
 
-## Hướng dẫn cài đặt
+Đây là tiện ích dạng **unpacked extension**, vì vậy bạn cần cài đặt thủ công trên Google Chrome:
 
-Vì đây là tiện ích chưa đóng gói (unpacked), bạn có thể cài đặt thủ công vào Google Chrome theo các bước sau:
+1. Truy cập trang **[Releases](../../releases)** của repository này và tải tệp `scribd-pdf-downloader-v1.0.0.zip` mới nhất.
+2. Giải nén tệp ZIP vừa tải về vào một thư mục trên máy tính.
+3. Mở Google Chrome và truy cập `chrome://extensions/`.
+4. Bật **Developer mode** ở góc trên bên phải.
+5. Nhấn **Load unpacked** ở góc trên bên trái.
+6. Chọn thư mục vừa giải nén (thư mục chứa tệp `manifest.json`).
 
-1. Truy cập vào trang **[Releases](../../releases)** của kho lưu trữ này và tải về tệp tin `scribd-pdf-downloader-v1.0.0.zip` mới nhất.
-2. Giải nén tệp ZIP vừa tải về thành một thư mục trên máy tính của bạn.
-3. Mở trình duyệt Google Chrome và truy cập vào đường dẫn: `chrome://extensions/`.
-4. Bật **Chế độ dành cho nhà phát triển** (Developer mode) ở góc trên cùng bên phải.
-5. Nhấp vào nút **Tải tiện ích đã giải nén** (Load unpacked) ở góc trên cùng bên trái.
-6. Chọn thư mục đã giải nén (thư mục này chứa tệp `manifest.json`).
+## Cách sử dụng
 
----
-
-## Hướng dẫn sử dụng
-
-1. Truy cập vào bất kỳ trang tài liệu Scribd nào (Ví dụ: `https://www.scribd.com/document/123456789/Document-Title`).
-2. Nhấp vào biểu tượng tiện ích **Scribd PDF Downloader** trên thanh công cụ của trình duyệt (bạn có thể nhấn vào biểu tượng mảnh ghép để ghim nó ra ngoài).
-3. (Tùy chọn) Điều chỉnh thanh **Scroll Delay** (Thời gian chờ cuộn, mặc định là 150ms) nếu mạng của bạn yếu.
-4. Nhấp vào nút **Start Downloader**.
-5. Đợi tiện ích tự động cuộn trang và tải toàn bộ dữ liệu.
-6. Tại hộp thoại in của Chrome, đảm bảo phần **Máy in đích** (Destination) chọn là **Lưu dưới dạng PDF** (Save as PDF), sau đó bấm **Lưu** (Save).
-7. Nhấp vào nút **Return to Document Page** trên màn hình chờ để quay lại trang tài liệu ban đầu.
-
----
+1. Mở bất kỳ trang tài liệu Scribd nào (ví dụ: `https://www.scribd.com/document/123456789/Document-Title`).
+2. Nhấn vào biểu tượng **Scribd PDF Downloader** trên thanh công cụ của trình duyệt (nếu chưa thấy, hãy nhấn biểu tượng mảnh ghép để ghim tiện ích).
+3. Điều chỉnh thanh **Scroll Delay** (mặc định: 150ms) nếu kết nối Internet của bạn chậm.
+4. Nhấn **Start Downloader**.
+5. Chờ tiện ích cuộn hết tài liệu và hoàn tất quá trình chuẩn bị.
+6. Trong hộp thoại in của Chrome, đặt **Destination** thành **Save as PDF**, sau đó nhấn **Save**.
+7. Sau khi hoàn tất, nhấn **Return to Document Page** trên cửa sổ nổi để quay lại trang tài liệu ban đầu.
 
 ## Giấy phép
 
-Dự án này được cấp phép theo các điều khoản của Giấy phép MIT - xem tệp [LICENSE](LICENSE) để biết thêm chi tiết.
+Dự án này được phát hành theo giấy phép MIT. Xem chi tiết trong tệp [LICENSE](LICENSE).
 
----
+## Tuyên bố miễn trừ trách nhiệm
 
-## Tuyên bố từ chối trách nhiệm
-
-Tiện ích này chỉ được phát triển cho mục đích giáo dục và học tập. Vui lòng tôn trọng quyền sở hữu trí tuệ và Điều khoản dịch vụ của Scribd. Chỉ tải xuống các tài liệu mà bạn có quyền truy cập hợp pháp.
+Tiện ích này chỉ được phát triển cho mục đích học tập và nghiên cứu. Vui lòng tuân thủ luật bản quyền và Điều khoản dịch vụ của Scribd. Chỉ tải xuống những tài liệu mà bạn có quyền truy cập.

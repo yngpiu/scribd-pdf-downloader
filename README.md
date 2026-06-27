@@ -1,5 +1,3 @@
-🇺🇸 English | [🇻🇳 Tiếng Việt](./README_VI.md)
-
 <p align="center">
   <img src="assets/logo.png" alt="Scribd PDF Downloader Logo" width="128">
 </p>
@@ -18,17 +16,14 @@
   <img src="https://img.shields.io/badge/Chrome-Manifest%20v3-orange.svg" alt="Chrome MV3">
 </p>
 
-The extension works by automatically redirecting document pages to their clean embed URLs, scrolling dynamically to trigger lazy-loading of all images, SVG layers, and MathJax/LaTeX equations, and formatting the page using exact CSS print sizing before invoking Chrome's native PDF printer.
-
----
-
-## Preview
+<p align="center">
+  <strong>English</strong> | <a href="./README_VI.md">Tiếng Việt</a>
+</p>
 
 <p align="center">
   <img src="assets/preview.png" alt="Extension Preview" width="320">
 </p>
 
----
 
 ## Features
 
@@ -41,7 +36,6 @@ The extension works by automatically redirecting document pages to their clean e
 - **No Background Redirect Blocks:** Prompts a manual "Return to Document Page" button upon completion, bypassing Chrome security restrictions on ungestured redirects.
 - **No Login Required:** Works instantly without a Scribd account.
 
----
 
 ## Installation
 
@@ -54,7 +48,6 @@ Since this is an unpacked extension, you can install it manually in Google Chrom
 5. Click **Load unpacked** in the top-left corner.
 6. Select the extracted folder (which contains `manifest.json`).
 
----
 
 ## How to Use
 
@@ -66,13 +59,11 @@ Since this is an unpacked extension, you can install it manually in Google Chrom
 6. In Chrome's print dialog, ensure **Destination** is set to **Save as PDF** and click **Save**.
 7. Click **Return to Document Page** on the overlay card to go back to the original article.
 
----
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
 
 ## Disclaimer
 
