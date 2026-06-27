@@ -1,14 +1,32 @@
 🇺🇸 English | [🇻🇳 Tiếng Việt](./README_VI.md)
 
 <p align="center">
-  <img src="icons/logo.png" alt="Scribd PDF Downloader Logo" width="120">
+  <img src="assets/logo.png" alt="Scribd PDF Downloader Logo" width="128">
 </p>
 
-# Scribd PDF Downloader - Chrome Extension
+<h1 align="center">Scribd PDF Downloader</h1>
 
-A clean, modern, and highly-optimized Manifest V3 Chrome Extension to download Scribd documents as high-quality PDFs for free. 
+<p align="center">
+  <b>A clean, modern, and highly-optimized Manifest V3 Chrome Extension to download Scribd documents as high-quality PDFs for free.</b>
+</p>
+
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Chrome-Manifest%20v3-orange.svg" alt="Chrome MV3">
+</p>
 
 The extension works by automatically redirecting document pages to their clean embed URLs, scrolling dynamically to trigger lazy-loading of all images, SVG layers, and MathJax/LaTeX equations, and formatting the page using exact CSS print sizing before invoking Chrome's native PDF printer.
+
+---
+
+## Preview
+
+<p align="center">
+  <img src="assets/preview.png" alt="Extension Preview" width="320">
+</p>
 
 ---
 

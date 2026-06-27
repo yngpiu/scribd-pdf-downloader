@@ -1,14 +1,32 @@
 [🇺🇸 English](./README.md) | 🇻🇳 Tiếng Việt
 
 <p align="center">
-  <img src="icons/logo.png" alt="Scribd PDF Downloader Logo" width="120">
+  <img src="assets/logo.png" alt="Scribd PDF Downloader Logo" width="128">
 </p>
 
-# Scribd PDF Downloader - Chrome Extension (Tiếng Việt)
+<h1 align="center">Scribd PDF Downloader</h1>
 
-Một tiện ích mở rộng Chrome (Manifest V3) hiện đại, sạch sẽ và tối ưu hóa để tải tài liệu Scribd dưới dạng PDF chất lượng cao hoàn toàn miễn phí.
+<p align="center">
+  <b>Một tiện ích mở rộng Chrome (Manifest V3) hiện đại, sạch sẽ và tối ưu hóa để tải tài liệu Scribd dưới dạng PDF chất lượng cao hoàn toàn miễn phí.</b>
+</p>
+
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/Gi%E1%BA%A5y%20ph%C3%A9p-MIT-green.svg" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/Phi%C3%AAn%20b%E1%BA%A3n-1.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Tr%C3%ACnh%20duy%E1%BB%87t-Chrome%20MV3-orange.svg" alt="Chrome MV3">
+</p>
 
 Extension tự động chuyển hướng các trang tài liệu thường sang liên kết nhúng sạch, tự động cuộn trang để tải tất cả hình ảnh, tài nguyên SVG, công thức toán học MathJax/LaTeX, áp dụng căn lề chính xác bằng CSS, và kích hoạt trình in PDF mặc định của Chrome.
+
+---
+
+## Giao diện / Preview
+
+<p align="center">
+  <img src="assets/preview.png" alt="Extension Preview" width="320">
+</p>
 
 ---
 
