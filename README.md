@@ -1,5 +1,9 @@
 🇺🇸 English | [🇻🇳 Tiếng Việt](./README_VI.md)
 
+<p align="center">
+  <img src="icons/logo.png" alt="Scribd PDF Downloader Logo" width="120">
+</p>
+
 # Scribd PDF Downloader - Chrome Extension
 
 A clean, modern, and highly-optimized Manifest V3 Chrome Extension to download Scribd documents as high-quality PDFs for free. 
